@@ -34,7 +34,7 @@ export default function App() {
 
   const handleOpenCalculatorAtCapacity = (kw: number) => {
     setCalculatorCapacity(kw);
-    const calcEl = document.getElementById('savings-calculator');
+    const calcEl = document.getElementById('savings-calculator') || document.getElementById('calculator');
     if (calcEl) {
       calcEl.scrollIntoView({ behavior: 'smooth' });
     }

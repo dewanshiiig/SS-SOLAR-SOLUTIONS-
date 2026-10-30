@@ -19,7 +19,12 @@ export const Header: React.FC<HeaderProps> = ({
 
   const handleNavClick = (href: string) => {
     setMobileMenuOpen(false);
-    const element = document.querySelector(href);
+    const targetId = href.startsWith('#') ? href.slice(1) : href;
+    const element =
+      document.querySelector(href) ||
+      document.getElementById(targetId) ||
+      (targetId === 'savings-calculator' ? document.getElementById('calculator') : null) ||
+      (targetId === 'calculator' ? document.getElementById('savings-calculator') : null);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -41,7 +46,7 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Zone 2: Navigation Links (Desktop / Large Viewports) */}
           <nav
             aria-label="Primary Navigation"
-            className="hidden xl:flex items-center gap-1.5 lg:gap-2.5 2xl:gap-4 overflow-x-auto py-1"
+            className="hidden xl:flex items-center gap-1.5 lg:gap-2.5 2xl:gap-4 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden py-1"
           >
             {NAV_ITEMS.map((item) => (
               <a

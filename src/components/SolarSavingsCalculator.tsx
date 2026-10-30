@@ -372,7 +372,12 @@ export const SolarSavingsCalculator: React.FC<SolarSavingsCalculatorProps> = ({
   };
 
   return (
-    <section id="calculator" className="py-14 bg-gradient-to-b from-[#0A192F] via-[#0E223D] to-[#0A192F] text-white">
+    <section
+      id="savings-calculator"
+      className="py-14 bg-gradient-to-b from-[#0A192F] via-[#0E223D] to-[#0A192F] text-white scroll-mt-20 relative"
+    >
+      {/* Anchor alias for #calculator */}
+      <div id="calculator" className="absolute -top-20" aria-hidden="true" />
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="text-center mb-8">

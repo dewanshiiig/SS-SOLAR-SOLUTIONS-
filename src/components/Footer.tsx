@@ -13,7 +13,12 @@ export const Footer: React.FC<FooterProps> = ({ language }) => {
   const isHindi = language === 'hi';
 
   const handleNavClick = (href: string) => {
-    const el = document.querySelector(href);
+    const targetId = href.startsWith('#') ? href.slice(1) : href;
+    const el =
+      document.querySelector(href) ||
+      document.getElementById(targetId) ||
+      (targetId === 'savings-calculator' ? document.getElementById('calculator') : null) ||
+      (targetId === 'calculator' ? document.getElementById('savings-calculator') : null);
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
