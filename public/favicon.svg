@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="310 15 160 140" width="64" height="64" fill="none">
+  <defs>
+    <!-- Left S Gradient -->
+    <linearGradient id="fav-ss-left" x1="0%" y1="10%" x2="100%" y2="90%">
+      <stop offset="0%" stop-color="#00BAFF" />
+      <stop offset="50%" stop-color="#0088E8" />
+      <stop offset="100%" stop-color="#005ec4" />
+    </linearGradient>
+
+    <!-- Right S Gradient -->
+    <linearGradient id="fav-ss-right" x1="0%" y1="10%" x2="100%" y2="90%">
+      <stop offset="0%" stop-color="#0072EC" />
+      <stop offset="55%" stop-color="#0B42B8" />
+      <stop offset="100%" stop-color="#12277B" />
+    </linearGradient>
+
+    <filter id="fav-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#0A192F" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Left S -->
+  <path
+    d="M 390 32
+       C 392 28, 386 25, 377 24
+       C 358 22, 338 33, 334 50
+       C 330 63, 342 74, 355 81
+       L 367 87
+       C 383 95, 393 105, 391 119
+       C 389 132, 373 140, 356 138
+       C 344 136, 334 131, 329 125
+       C 328 124, 329 126, 332 132
+       C 333 135, 328 134, 326 132
+       C 324 130, 326 120, 331 113
+       C 332 112, 334 114, 336 119
+       C 341 128, 352 132, 362 131
+       C 374 130, 382 121, 382 111
+       C 382 99, 370 89, 356 82
+       L 345 76
+       C 331 69, 322 57, 325 43
+       C 329 27, 347 18, 368 20
+       C 380 21, 388 25, 390 32
+       Z"
+    fill="url(#fav-ss-left)"
+    filter="url(#fav-shadow)"
+  />
+
+  <!-- Right S -->
+  <path
+    d="M 448 32
+       C 450 28, 444 25, 435 24
+       C 416 22, 396 33, 392 50
+       C 388 63, 400 74, 413 81
+       L 425 87
+       C 441 95, 451 105, 449 119
+       C 447 132, 431 140, 414 138
+       C 402 136, 392 131, 387 125
+       C 386 124, 387 126, 390 132
+       C 391 135, 386 134, 384 132
+       C 382 130, 384 120, 389 113
+       C 390 112, 392 114, 394 119
+       C 399 128, 410 132, 420 131
+       C 432 130, 440 121, 440 111
+       C 440 99, 428 89, 414 82
+       L 403 76
+       C 389 69, 380 57, 383 43
+       C 387 27, 405 18, 426 20
+       C 438 21, 446 25, 448 32
+       Z"
+    fill="url(#fav-ss-right)"
+  />
+</svg>

@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-hindi: 'Noto Sans Devanagari', 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  /* Brand Colors: Deep Navy, Saffron Yellow, White, Light Grey, Green Accent */
+  --color-brand-navy-950: #060e1a;
+  --color-brand-navy-900: #0a192f;
+  --color-brand-navy-800: #102342;
+  --color-brand-navy-700: #1b355e;
+  --color-brand-saffron: #ff9933;
+  --color-brand-saffron-dark: #e8800c;
+  --color-brand-saffron-light: #ffaa4d;
+  --color-brand-green: #10b981;
+  --color-brand-green-dark: #059669;
+  --color-brand-light: #f8fafc;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: #0f172a;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+/* Accessible focus ring indicators for keyboard navigation */
+:focus-visible {
+  outline: 2px solid #ff9933 !important;
+  outline-offset: 2px !important;
+}
+
+/* Subtle architectural patterns */
+.bg-grid-subtle {
+  background-image: radial-gradient(rgba(10, 25, 47, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom styling for range input track & thumb */
+input[type=range] {
+  accent-color: #0a192f;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+}
+
+input[type=range]::-moz-range-thumb {
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+}

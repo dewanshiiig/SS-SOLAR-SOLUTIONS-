@@ -1,0 +1,8 @@
+{
+  "name": "SS Solar Solutions Indore",
+  "description": "Turnkey rooftop solar installations, PM Surya Ghar Muft Bijli Yojana subsidies, 3 kW & 5 kW solar packages in Indore, Madhya Pradesh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
